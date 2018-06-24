@@ -78,15 +78,15 @@ public class HttpServer {
         InputStream in = HttpServer.class.getClassLoader().getResourceAsStream(uri.substring(1));
         //send content
         socketOut.write("\r\n".getBytes());
-        socketOut.write("{data:nihao}".getBytes());
-//        int len=0;
-//        buffer=new byte[128];
-//        if (in!=null) {
-//            while((len=in.read(buffer))!=-1){
-//                System.out.println(new String(buffer));
-//                socketOut.write(buffer,0,len);
-//            }
-//        }
+//        socketOut.write("{data:nihao}".getBytes());
+        int len=0;
+        buffer=new byte[128];
+        if (in!=null) {
+            while((len=in.read(buffer))!=-1){
+                System.out.println(new String(buffer));
+                socketOut.write(buffer,0,len);
+            }
+        }
 
         Thread.sleep(1000);
         //close tcp link
