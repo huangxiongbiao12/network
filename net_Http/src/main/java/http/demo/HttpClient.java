@@ -26,6 +26,8 @@ public class HttpClient {
 
             InputStream inputStream = socket.getInputStream();
             int size = 0;
+            int i = 0;
+            Thread.sleep(2000);
             while (size<=0) {
                 size = inputStream.available();
                 if (size>0) {
@@ -33,12 +35,13 @@ public class HttpClient {
                     inputStream.read(bytes);
                     String response = new String(bytes);
                     System.out.println(response);
+                    i++;
                 }
             }
 
 
 
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }finally {
             try {
