@@ -38,9 +38,6 @@ public class HttpClient {
                     i++;
                 }
             }
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }finally {

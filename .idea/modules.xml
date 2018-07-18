@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/net_Http/net_Http.iml" filepath="$PROJECT_DIR$/net_Http/net_Http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty4-demos/netty4-demos.iml" filepath="$PROJECT_DIR$/netty4-demos/netty4-demos.iml" />
       <module fileurl="file://$PROJECT_DIR$/network.iml" filepath="$PROJECT_DIR$/network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serializable_demo/serializable_demo.iml" filepath="$PROJECT_DIR$/serializable_demo/serializable_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socket_chat/socket_chat.iml" filepath="$PROJECT_DIR$/socket_chat/socket_chat.iml" />
     </modules>
   </component>
 </project>

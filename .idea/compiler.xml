@@ -6,11 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="network" />
+        <module name="net_Http" />
+        <module name="netty4-demos" />
+        <module name="serializable_demo" />
+        <module name="socket_chat" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="net_Http" target="1.5" />
+      <module name="netty4-demos" target="1.7" />
       <module name="network" target="1.5" />
+      <module name="serializable_demo" target="1.5" />
+      <module name="socket_chat" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
